@@ -1,6 +1,3 @@
-<video id="background-video" autoplay loop muted>
-  <source src="2.mp4" type="video/mp4">
-</video>
 <?php
   include ('koneksi.php'); 
 ?>
@@ -11,25 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Administrator</title>
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
-<style> 
-    #background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-</style>
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
+            <img src="arab.jpg" width="100%" alt="">
             </div>
         </div>
         <div class="row">
@@ -92,22 +77,6 @@
                 elseif($_GET['page'] == 'buku')
                 {
                     include('buku.php');
-                }
-                elseif ($_GET['page'] == 'anggota-insert') 
-                {
-                  include('anggota-insert.php');
-                }
-              elseif ($_GET['page'] == 'anggota-delete') 
-                {
-                  include('anggota-delete.php');
-                }
-                elseif($_GET['page']=="anggota-edit")
-                {
-                  include('anggota-edit.php');
-                }
-                elseif($_GET['page']=="anggota-edit-proses")
-                {
-                  include('anggota-edit-proses.php');
                 }
                 else
                 {
